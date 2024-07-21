@@ -1,0 +1,238 @@
+.header{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+     margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-pic {
+     width: 100px;
+     border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 1px;
+    margin: 1px;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #4caf50;
+}
+
+span{
+   color: crimson;
+}
+body {
+   font-family: Arial, sans-serif;
+   margin: 1;
+   padding: 1;
+   background-color: #f0f2f5;
+   
+}
+.container {
+   max-width: 800;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px
+}
+h1, h2 {
+   text-align: center;
+   color: #333;
+}
+.skill {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 10px 0;
+}
+.skill-name {
+   font-weight: bold;
+   color: #555;
+}
+.skill-bar {
+   flex: 1;
+   height: 10px;
+   margin: 0 10px;
+   background-color: #ddd;
+   border-radius: 5px;
+   overflow: hidden;
+}
+.skill-level {
+   height: 100%;
+   background-color: #4caf50;
+}
+.level-text {
+   font-weight: bold;
+   color: #333;
+}
+.project-name{
+   font-weight: bold;
+   color: #555;
+   text-align: center;
+   padding: 1px;
+}
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.download-button:hover{
+    background-color: #007bff;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #007bff;
+}
+.social-handles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.social-handles a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.social-handles a:hover {
+    color: #007bff;
+}
+footer{
+    text-align: center;
+    background-color: #fff;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.image-container {
+    width: 300px; /* Container width */
+    height: 200px; /* Container height */
+    overflow: hidden; /* Hides overflow */
+}
+
+.fit-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops and covers the container */
+}
+html{
+    scroll-behavior: smooth;
+}
+.contact-info a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 24px; /* Adjust icon size as needed */
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-info a:hover {
+    color: #007BFF; /* Change color on hover */
+    text-align: center;
+}
+
+.contact-info a .fa {
+    margin-right: 8px; /* Space between icon and text */
+    text-align: center;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* css for small screens */
+@media screen and (max-width: 600px) {
+    .form-group {
+        width: 100%;
+    }
+.Projects, img{
+    width: 300px;
+}
+}
